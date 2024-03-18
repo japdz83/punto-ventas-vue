@@ -20,6 +20,7 @@ const store = useCouponStore()
 			type="button"
 			class="p-3 bg-green-400 font-bold disabled:opacity-30"
 			@click="store.applyCoupon"
+			:disabled="store.isValidCoupon"
 		>
 			Canjear
 		</button>
